@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "algorithm": "cpp",
+        "atomic": "cpp",
+        "chrono": "cpp",
+        "deque": "cpp",
+        "functional": "cpp",
+        "locale": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "string": "cpp",
+        "type_traits": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "format": "cpp"
+    }
+}
