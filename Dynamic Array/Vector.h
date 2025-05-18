@@ -1,16 +1,37 @@
 #pragma once
+#include <iostream>
+#include "stddef.h"
 namespace BG{
     template<typename T>
     class Vector
     {
     private:
         /* data */
-        T* data;
-        size_t size = 0;
-        size_t capacity = 0;
+        T* _data = nullptr;
+        size_t _size = 0;
+        size_t _capacity = 0;
     public:
-        Vector(/* args */);
-        ~Vector();
+        Vector()
+        :_size(0), _capacity(10){
+            _data = new T[_capacity];
+        };
+        Vector(int size, T item)
+        : _size (size), _capacity(10)
+        {
+            if(size < _capacity){
+                _data = new T[_capacity];
+                for(int i=0; i<size; i++){
+                    _data[i] = item;
+                }
+            }
+
+        }
+        ~Vector(){
+            delete _data;
+        };
+
+        T* begin() {return _data;}
+        T* end() {return _data + _size;}
     };
 
     
