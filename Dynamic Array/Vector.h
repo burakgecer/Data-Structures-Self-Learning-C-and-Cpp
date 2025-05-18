@@ -32,6 +32,9 @@ namespace BG{
 
         T* begin() {return _data;}
         T* end() {return _data + _size;}
+        const T* begin() const {return _data;}
+        const T* end() const {return _data + _size;}
+        int size() const {return _size;}
     };
 
     

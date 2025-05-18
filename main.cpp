@@ -5,6 +5,7 @@ int main(){
     for(int i: vector){
         std::cout<<i<<std::endl;
     }
+    vector.size();
 
 
 
