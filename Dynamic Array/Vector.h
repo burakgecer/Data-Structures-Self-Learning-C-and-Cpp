@@ -35,6 +35,7 @@ namespace BG{
         const T* begin() const {return _data;}
         const T* end() const {return _data + _size;}
         int size() const {return _size;}
+        int capacity() const {return _capacity;}
     };
 
     
