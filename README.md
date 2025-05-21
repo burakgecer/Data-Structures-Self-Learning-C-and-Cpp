@@ -13,9 +13,9 @@
 
  You can see the progress that I have made.
 
- ### [ ] Vector (Dynamic Array)
+ 1. ### [ ] Vector (Dynamic Array)
 
- ### [ ] Linked Lists
+ 2. ### [ ] Linked Lists
 
  1. [X] Singly Linked Lists
 
