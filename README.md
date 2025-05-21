@@ -17,11 +17,11 @@
 
  ### [ ] Linked Lists
 
- [ ] Singly Linked Lists
+ 1. [ ] Singly Linked Lists
 
- [ ] Doubly Linked Lists
+ 2. [ ] Doubly Linked Lists
  
- [ ] Circular Linked Lists
+ 3. [ ] Circular Linked Lists
 
  ### [ ] Stacks and Queues
 
