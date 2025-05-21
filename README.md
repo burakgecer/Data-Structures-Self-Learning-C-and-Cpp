@@ -17,7 +17,7 @@
 
  ### [ ] Linked Lists
 
- 1. [ ] Singly Linked Lists
+ 1. [X] Singly Linked Lists
 
  2. [ ] Doubly Linked Lists
  
