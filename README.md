@@ -13,29 +13,71 @@
 
  You can see the progress that I have made.
 
- 1. ### [ ] Vector (Dynamic Array)
+ ### [ ] Dynamic Array
 
- 2. ### [ ] Linked Lists
+     1. [ ] Vector
 
- 1. [X] Singly Linked Lists
+ ### [ ] Linked Lists
 
- 2. [ ] Doubly Linked Lists
+     1. [ ] Singly Linked Lists
+
+     2. [ ] Doubly Linked Lists
  
- 3. [ ] Circular Linked Lists
+     3. [ ] Circular Linked Lists
 
  ### [ ] Stacks and Queues
+ 
+     1. [ ] Stacks
+ 
+     2. [ ] Queues
+  
+     3. [ ] Circular Queue
+ 
+     4. [ ] Double-Ended Queue (Deque)
 
  ### [ ] Trees
 
+     1. [ ] Binary Tree & Traversals
+
+     2. [ ] Binary Search Tree (BST)
+ 
+     3. [ ] AVL Tree / Red-Black Tree
+
+     4. [ ] Heap / Priority Queue
+
  ### [ ] Hashing
+
+     1. [ ] Hash Tables / Hash Maps / Hash Sets
+
+     2. [ ] Open Addressing, Separate Chaining
 
  ### [ ] Recursion and Backtracking
 
+     1. [ ] Recursion Basics
+
+     2. [ ] Backtracking Problems
+
  ### [ ] Sorting and Searching
+
+     1. [ ] Sorting Algorithms (bubble, insertion, merge, quick, heap)
+
+     2. [ ] Binary Search & Variants
  
  ### [ ] Graphs
+
+     1. [ ] Graph Representations (adjacency list/matrix)
+
+     2. [ ] BFS, DFS
+ 
+     3. [ ] Dijkstra, Bellman-Ford, Floyd-Warshall
+
+     4. [ ] Minimum Spanning Trees (Kruskal, Prim)
+
+     5. [ ] Topological Sort, Cycle Detection
  
  ### [ ] Dynamic Programming
+
+      1. [ ] Memoization, Tabulation 
 
 
 
