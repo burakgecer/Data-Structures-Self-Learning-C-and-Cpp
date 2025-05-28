@@ -40,6 +40,12 @@ namespace BG{
         int size() const {return _size;}
         int capacity() const {return _capacity;}
         bool empty() const {return _size == 0;}
+        T& at(int index) const {
+            if(index < 0 || static_cast<size_t>(index) >= _size){ // Safer C++ usage of (size_t)index
+                throw std::out_of_range("Index out of range.");
+            }
+            return _data[index];
+        }
         void push_back(T item){
             if(_size >= _capacity){
                 T *new_data = new T[_capacity * 2]; //Increase capacity times 2 if you don't have free slot.
