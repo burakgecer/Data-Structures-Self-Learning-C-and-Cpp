@@ -12,9 +12,12 @@ namespace BG{
         size_t _capacity = 0;
     public:
         Vector()
-        :_size(0), _capacity(10){
+        :_size(0), _capacity(2){
             _data = new T[_capacity];
+            std::cout << "Empty constructor called." << std::endl;
         };
+        // TO DO:
+        // Do dynamic alloc. here ->
         Vector(int size, T item)
         : _size (size), _capacity(10)
         {
@@ -37,6 +40,23 @@ namespace BG{
         int size() const {return _size;}
         int capacity() const {return _capacity;}
         bool empty() const {return _size == 0;}
+        void push_back(T item){
+            if(_size >= _capacity){
+                T *new_data = new T[_capacity * 2]; //Increase capacity times 2 if you don't have free slot.
+                for(int i=0; i<_size; i++){
+                    new_data[i] = _data[i];
+                }
+                delete[] _data;
+                _data = new_data;
+                _capacity *= 2;
+                _data[_size] = item;
+                _size++;
+            }
+            else{
+                _data[_size] = item;
+                _size++;
+            }
+        }
     };
 
     
