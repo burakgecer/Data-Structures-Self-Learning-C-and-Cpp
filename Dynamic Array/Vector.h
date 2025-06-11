@@ -66,6 +66,12 @@ namespace BG{
         void pop_back(){
             _size--;
         }
+        const T& front()const {
+            return _data[0];
+        }
+        const T& back()const {
+            return _data[_size-1];
+        }
     };
 
     
