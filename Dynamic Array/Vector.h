@@ -63,6 +63,9 @@ namespace BG{
                 _size++;
             }
         }
+        void pop_back(){
+            _size--;
+        }
     };
 
     
