@@ -74,7 +74,7 @@ namespace BG{
         }
         // Inserts a copy of value before pos.
         void insert(int pos, const T& item){
-            if(pos > _size){
+            if(pos > _size || pos < 0){
                 throw std::out_of_range("Index out of range.");
                 exit(0);
             }
@@ -90,6 +90,16 @@ namespace BG{
         }
         void clear(){
             _size = 0;
+        }
+        void erase(int pos){
+            if(pos >= _size || pos < 0){
+                throw std::out_of_range("Index out of range.");
+                exit(0);
+            }
+            for(int i = pos; i<_size; i++){
+                _data[i] = std::move(_data[i+1]); // move = transfer resources.
+            }
+            _size -= 1;    
         }
     };
 
