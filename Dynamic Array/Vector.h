@@ -88,6 +88,9 @@ namespace BG{
             _data[pos] = item;
             _size += 1;
         }
+        void clear(){
+            _size = 0;
+        }
     };
 
     
