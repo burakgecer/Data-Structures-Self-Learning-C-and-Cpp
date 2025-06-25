@@ -37,7 +37,7 @@ namespace BG{
         T* end() {return _data + _size;}
         const T* begin() const {return _data;}
         const T* end() const {return _data + _size;}
-        int size() const {return _size;}
+        size_t size() const {return _size;}
         int capacity() const {return _capacity;}
         bool empty() const {return _size == 0;}
         T& at(int index) const {
@@ -71,6 +71,22 @@ namespace BG{
         }
         const T& back()const {
             return _data[_size-1];
+        }
+        // Inserts a copy of value before pos.
+        void insert(int pos, const T& item){
+            if(pos > _size){
+                throw std::out_of_range("Index out of range.");
+                exit(0);
+            }
+            if(pos == _size){
+
+            }
+            //_size += 1;
+            for(int i = _size; i >= pos; i--){
+                _data[i] = _data[i - 1];
+            }
+            _data[pos] = item;
+            _size += 1;
         }
     };
 
