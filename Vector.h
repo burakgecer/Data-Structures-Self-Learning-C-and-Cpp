@@ -1,4 +1,7 @@
-#pragma once
+#ifndef DATASTRUCTURES_VECTOR_H
+#define DATASTRUCTURES_VECTOR_H
+#include <cassert>
+#include <initializer_list>
 #include <iostream>
 #include "stddef.h"
 namespace BG{
@@ -8,6 +11,7 @@ namespace BG{
     private:
         /* data */
         T* _data = nullptr;
+        std::initializer_list<T> _initData;
         size_t _size = 0;
         size_t _capacity = 0;
     public:
@@ -28,6 +32,16 @@ namespace BG{
                 }
             }
 
+        }
+        Vector(std::initializer_list<T> values) : _initData(values){
+            int index = 0;
+            std::cout << "Init constructor called." << std::endl;
+            _data = new T[values.size()];
+            for (int i: values) {
+                std::cout << i << std::endl;
+                _data[index] = i;
+                index++;
+            }
         }
         ~Vector(){
             delete _data;
@@ -99,9 +113,10 @@ namespace BG{
             for(int i = pos; i<_size; i++){
                 _data[i] = std::move(_data[i+1]); // move = transfer resources.
             }
-            _size -= 1;    
+            _size -= 1;
         }
     };
 
-    
+
 }
+#endif //DATASTRUCTURES_VECTOR_H
