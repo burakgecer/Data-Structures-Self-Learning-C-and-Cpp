@@ -33,18 +33,18 @@ namespace BG{
             }
 
         }
-        Vector(std::initializer_list<T> values) : _initData(values){
+        Vector(std::initializer_list<T> values) : _initData(values), _capacity(5){
             int index = 0;
             std::cout << "Init constructor called." << std::endl;
             _data = new T[values.size()];
+            _size = values.size();
             for (int i: values) {
-                std::cout << i << std::endl;
                 _data[index] = i;
                 index++;
             }
         }
         ~Vector(){
-            delete _data;
+            delete[] _data;
         };
 
         T* begin() {return _data;}
