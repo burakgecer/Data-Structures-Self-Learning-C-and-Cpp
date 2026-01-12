@@ -46,7 +46,13 @@ namespace BG{
         ~Vector(){
             delete[] _data;
         };
-
+        // use .at() if you want safer way :)
+        T& operator [](int index) {
+            return _data[index];
+        }
+        const T& operator [](int index) const{
+            return _data[index];
+        }
         T* begin() {return _data;}
         T* end() {return _data + _size;}
         const T* begin() const {return _data;}
